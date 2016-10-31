@@ -927,9 +927,11 @@ article{
   margin-bottom: 120px;
 }
 .seis article figure{
+  /*Margins*/
   margin-bottom: 90px;
 }
 .seis article .boton{
+  /*Text*/
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -938,6 +940,9 @@ article{
             esta abajo mas hacia abajo.*/
   margin-bottom: 90px!important;
 }
+
+
+/*Seccion: siete*/
 
 
 
