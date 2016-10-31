@@ -55,7 +55,12 @@ $(document).on('ready',function() {
 	};
 
 
-
+	$('.tweets-slider').bxSlider({
+    infiniteLoop:true,
+    auto:true,
+    controls:false,
+		slideWidth:719
+  });
 
 });
 

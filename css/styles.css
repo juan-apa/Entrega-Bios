@@ -225,7 +225,7 @@ html, body {
 }
 
 body {
-	font-family: 'lato', serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size:62.5%;
 	line-height: 1em;
@@ -893,6 +893,7 @@ article{
 
   /*Padding*/
   padding-top:140px;
+  padding-bottom: 30px;
 
   /*Text*/
   text-align: center;
@@ -943,17 +944,16 @@ article{
 
 
 /*Seccion: siete*/
+/*BX-Slider*/
 .bx-wrapper {
   margin:0 auto 0 auto;
 }
-
 .bx-wrapper .bx-viewport {
   background: transparent;
   border:none;
   box-shadow: none;
   left:0;
 }
-
 .bx-wrapper .bx-pager.bx-default-pager a {
   background:transparent;
   -moz-border-radius:0;
@@ -961,13 +961,184 @@ article{
   border-radius:0;
   border:1px solid #c59a6d;
 }
-
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
    background:#c59a6d;
 }
 
+.siete article{
+  /*Dimensions*/
+  width: 100%;
+  height: 496px;
 
+  /*Padding*/
+  padding-top: 105px;
+
+  /*Text*/
+  text-align: center;
+  color: rgb(255, 255, 255);
+
+
+  /*Background*/
+  background-image: url(../images/bg4.jpg);
+}
+.siete article h1{
+  /*Text*/
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.siete article .tweets-slider{
+  /*Margins*/
+  margin-top: 30px;
+}
+.siete article .tweets-slider li p{
+  /*Text*/
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+/*Seccion: ocho*/
+.ocho{
+  /*Dimensions*/
+  width: 100%;
+  height: auto;
+}
+.ocho article{
+  /*Dimensions*/
+  width: 100%;
+  height: auto;
+
+  /*Paddings*/
+  padding-top: 150px;
+
+  /*Text*/
+  text-align: center;
+
+  /*Background*/
+  background-color: rgb(40, 47, 53);
+}
+.ocho article h1{
+  /*Text*/
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+.ocho article ul{
+  /*Dimensions*/
+  height: 490px;
+  width: 1170px;
+
+  /*Alignment*/
+  display: inline-block;
+
+  /*Misc.*/
+  list-style: none;
+}
+.ocho article ul li{
+  /*Alignment*/
+  float: left;
+}
+.ocho article ul .direccion{
+  text-align: left;
+  width: 33%;
+}
+.ocho article ul .direccion figure{
+  /*Dimensions*/
+  width: 16px;
+  height: 24px;
+
+  /*Position*/
+  float: left;
+
+  /*Misc.*/
+  overflow: hidden;
+
+}
+.ocho article ul .direccion figure img{
+  /*Dimensions*/
+  height: auto;
+  width: auto;
+
+  /*Position*/
+  left: -186px;
+  top: 0px;
+  position: relative;
+}
+.ocho article ul .direccion .direccion_info{
+  /*Position*/
+  float: left;
+
+  /*Margins*/
+  margin-left: 10px;
+}
+.ocho article ul .direccion .direccion_info h2{
+  /*Text*/
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+
+  /*Margins*/
+  margin-bottom: 25px;
+  margin-top: 6px;
+}
+.ocho article ul .direccion .direccion_info p{
+  /*Text*/
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  line-height: 25px;
+}
+.ocho article ul .direccion .direccion_info p a{
+  /*Text*/
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+
+  /*Margins*/
+  margin-right: 20px;
+
+}
+.ocho article ul .direccion .direccion_info p a i{
+  /*Text*/
+  font-size: 20px;
+}
+.ocho article ul .form-wrap{
+  /*Dimensions*/
+  width: 66%;
+}
+
+/*Form*/
+.form-wrap form {
+  width:100%;
+}
+.form-wrap .col input,
+textarea {
+  background:#000;
+  border:none;
+  border-top:4px solid transparent;
+  color:#fff;
+  padding:0 1% 0 1%;
+}
+.form-wrap .col input {
+  height:3em;
+}
+.form-wrap .col input:focus,
+textarea:focus {
+  border-top-color: #c59a6d;
+}
+.form-wrap .col input:hover,
+textarea:hover {
+  background:#333;
+}
+.form-wrap input[type=submit]{
+  background: #c59a6d;
+  border:none;
+  height:3em;
+  color:#000;
+  float:right;
+  padding:0 3em 0 3em;
+}
 
 
 
