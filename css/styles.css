@@ -1025,6 +1025,9 @@ article{
   font-size: 20px;
   color: rgb(255, 255, 255);
   letter-spacing: 2px;
+
+  /*Margins*/
+  margin-bottom: 25px;
 }
 .ocho article ul{
   /*Dimensions*/
@@ -1103,18 +1106,47 @@ article{
   /*Text*/
   font-size: 20px;
 }
+/*Form*/
 .ocho article ul .form-wrap{
   /*Dimensions*/
   width: 66%;
-}
 
-/*Form*/
+  /*Padding*/
+  /*
+  padding-left: 3%;
+  padding-right: 3%;
+  */
+
+  /*Position*/
+  float: left;
+}
+.ocho article ul .form-wrap input{
+  /*Dimensions*/
+  width: 45%;
+  height: 50px;
+
+  /*Margins*/
+  margin-bottom:  20px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.ocho article ul .form-wrap textarea{
+  /*Dimensions*/
+  width: 94.5%;
+  height: 100px;
+
+  /*Text*/
+  font-family: 'Open Sans', sans-serif;
+
+  /*Margins*/
+  margin-bottom: 15px;
+}
 .form-wrap form {
   width:100%;
 }
 .form-wrap .col input,
 textarea {
-  background:#000;
+  background:rgb(30, 36, 41);
   border:none;
   border-top:4px solid transparent;
   color:#fff;
