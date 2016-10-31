@@ -345,11 +345,11 @@ footer {
 }
 
 .displayNone{
-  display: none;
+  display: none!important;
 }
 
 .displayBlock{
-  display: block;
+  display: block!important;
 }
 
 .txt_center {
@@ -490,11 +490,12 @@ article{
 
 .linea{
   border-top: solid;
-  border-color: orange;
+  border-color: rgb(197, 154, 109);
   border-width: 1px;
   width: 40px;
   height: 1px;
   margin-bottom: 40px;
+  display: inline-block;
 }
 
 .uno article div{
@@ -512,282 +513,410 @@ article{
   line-height: 1.2em;
 }
 
+
+/*Clases auxiliares*/
 .flecha_w{
   font-size: 2em;
   color: rgb(255, 255, 255);
   padding: 0.5em 0.75em 0.5em 0.75em;
 }
-
 .flecha_o{
   font-size: 2em;
-  color: orange;
+  color: rgb(197, 154, 109);
   padding: 0.5em 0.75em 0.5em 0.75em;
   width: 43px;
   display: inline-block;
 }
-
 .recuadro_w{
   border-color: #fff;
   border-width: 2px;
   border-style: solid;
   border-radius: 3px;
 }
-
 .recuadro_o{
-  border-color: orange;
+  border-color: rgb(197, 154, 109);
   border-width: 1px;
   border-style: solid;
   border-radius: 1px;
 }
-
 .recuadro_b{
   border-color: #000;
   border-width: 1px;
   border-style: solid;
   border-radius: 1px;
 }
-
 .recuadro_g{
-  border-color: #b3b3b3;
+  border-color: rgb(142, 145, 151);;
   border-width: 1px;
   border-style: solid;
   border-radius: 1px;
 }
+.inline-block{
+  /*Alignment*/
+  display: inline-block;
+}
 
+
+/*Seccion: dos*/
 .dos{
+  /*Paddings*/
   padding-top: 93px;
   padding-bottom: 30px;
 }
-
 .dos article{
+  /*Alignment*/
   text-align: center;
 }
-
 .dos article div{
+  /*Alignment*/
   display: inline-block;
 }
-
 .dos_titulo{
+  /*Dimensions*/
+  width: auto;
+  height: auto;
+
+  /*Text*/
   color: #000;
   font-size: 3em;
   line-height: 1.5em;
   font-family: 'Open Sans', sans-serif;
-  width: auto;
-  height: auto;
+
+  /*Paddings*/
   padding: 0 2em 1em 2em;
 }
-
 .dos_text{
-  font-size: 1.75em;
-  line-height: 1.75em;
-  font-family: 'Open Sans', sans-serif;
-  color: #000000;
+  /*Dimensions*/
   height: 93px;
   width: auto;
   max-width: 740px;
-  text-align: center;
-  margin-bottom: 50px;
-}
 
-.tres{
-  width: 100%;
-  height: auto;
-}
-
-.tres article{
-  width: 100%;
-  height: auto;
-}
-
-.tres .boton_play{
-  width: 100%;
-  height: 100%;
-  display: table;
-  text-align: center;
-  position: absolute;
-}
-
-.tres .boton_play i{
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.tres article figure{
-  width: 100%;
-  height: auto;
-}
-
-.tres article figure img{
-  width: 100%;
-  height: auto;
-}
-
-.inline-block{
-  display: inline-block;
-}
-
-.cuatro{
-  width: 100%;
-  height: 1100px;
-}
-
-.cuatro article{
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding-top: 125px;
-
-}
-
-.cuatro_text{
-  width: 720px;
-  display: inline-block;
+  /*Text*/
   font-size: 1.75em;
   line-height: 1.75em;
   font-family: 'Open Sans', sans-serif;
   color: #000000;
-  margin-bottom: 140px;
-}
-
-.cuatro article .cuadrados{
-  width: auto;
-  max-width: 1170px;
-  height: 510px;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.cuatro article .cuadrados .cuad{
-  width: 365px;
-  height: 430px;
-  float: left;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 35px;
-  font-size: 13px;
-  padding: 40px 35px 0 35px
-}
 
-.cuatro article .cuadrados .cuad h1{
-  font-size: 15px;
-}
-
-.cuad{
-  float: left;
-}
-.cuadrados .prim figure:hover img{
-  transform: translateX(-68px);
-}
-
-.cuadrados .sec figure:hover img{
-  transform: translateX(-57px);
-}
-
-.cuatro .article .cuadrados .prim
-
-.cuatro article .cuadrados .img_tres:hover figure img{
-  transform: translateX(-43px);
-}
-
-.prim{
-  width: 365px;
-  height: 500px!important;
-  margin-left: 35px;
-  margin-right: 35px;
-  font-weight: bold;
-}
-
-.prim h1{
-  color: orange;
-}
-
-.sec{
-  margin-top: 36px;
-  color: #b3b3b3;
+  /*Margins*/
+  margin-bottom: 50px;
 }
 
 
-
-.cuatro article .cuadrados .img_uno figure{
-  width: 55px;
-  max-width: 55px;
-}
-.cuatro article .cuadrados .img_dos figure{
-  width: 64px;
-}
-
-.cuatro article .cuadrados .img_tres figure{
-  width:50px;
-}
-
-
-.cuatro article .cuadrados .img_uno figure img{
-  left: -3px;
-}
-.cuatro article .cuadrados .img_dos figure img{
-  left: -117px;
-}
-.cuatro article .cuadrados .img_tres figure img{
-  left: -250px;
-}
-
-.cuatro article .cuadrados .cuad figure{
-  display: inline-block;
-  width: 64px;
-  overflow: hidden;
-}
-.cuatro article .cuadrados .cuad:last-child figure{
-  width: 45px;
-}
-
-.cuatro article .cuadrados .cuad figure img{
+/*Seccion: tres*/
+.tres{
+  /*Dimensions*/
+  width: 100%;
   height: auto;
-  width: auto;
-  position: relative;
-  /*image-resolution: from-image;*/
+}
+.tres article{
+  /*Dimensions*/
+  width: 100%;
+  height: auto;
+}
+.tres .boton_play{
+  /*Dimensions*/
+  width: 100%;
+  height: 100%;
+
+  /*Alignment*/
+  display: table;
+  position: absolute;
+
+  /*Text*/
+  text-align: center;
+}
+.tres .boton_play i{
+  /*Alignment*/
+  display: table-cell;
+  vertical-align: middle;
+}
+.tres article figure{
+  /*Dimensions*/
+  width: 100%;
+  height: auto;
+}
+.tres article figure img{
+  /*Dimensions*/
+  width: 100%;
+  height: auto;
 }
 
+/*Seccion: cuatro*/
+.cuatro{
+  /*Dimensions*/
+  width: 100%;
+  height: 1100px;
+}
+.cuatro article{
+  /*Dimensions*/
+  width: 100%;
+  height: auto;
 
-.cuatro article .cuatro_titulo{
+  /*Text*/
+  text-align: center;
+
+  /*Alignment*/
+  padding-top: 125px;
+}
+.cuatro_text{
+  /*Dimensions*/
+  width: 720px;
+
+  /*Text*/
+  font-size: 1.75em;
+  line-height: 1.75em;
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+
+  /*Margins*/
+  margin-bottom: 135px;
+
+  /*Misc.*/
   display: inline-block;
+}
+.cuatro article .cuadradosDeInfo{
+  /*Dimensions*/
+  width: auto;
+  height: auto;
+
+  /*Margins*/
+  margin-bottom: 40px;
+
+  /*Misc.*/
+  list-style: none;
+  display: inline-block;
+}
+.cuatro article .cuatro_titulo{
+  /*Dimensions*/
+  width: auto;
+  height: auto;
+
+  /*Text*/
   color: #000;
   font-size: 3em;
   line-height: 1.5em;
   font-family: 'Open Sans', sans-serif;
-  width: auto;
-  height: auto;
-  padding: 0 2em 1em 2em;
-}
 
-.cinco{
-  width: 100%;
-  height: 200px;
-  background-color: #003d99;
+  /*Paddings*/
+  padding: 0 2em 1em 2em;
+
+  /*Misc*/
+  display: inline-block;
+}
+.cuatro article .cuadradosDeInfo li{
+  /*li dimensions*/
+  height: 429px;
+  width: 364px;
+
+  /*Paddings*/
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 85px;
+
+  /*Margins*/
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  /*Borders*/
+  border-color: rgb(142, 145, 151);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1px;
+
+  /*Position*/
+  float: left;
+
+  /*Animations*/
+  transition:all 0.3s ease-in-out;
+}
+.cuatro article .cuadradosDeInfo li h1{
+  /*Margins*/
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  /*Text*/
+  color: rgb(142, 145, 151);
+  font-size: 14px;
+  letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
 
+  /*Animations*/
+  transition:all 0.3s ease-in-out;
 }
-
-.cinco article{
-  display: table;
-  vertical-align: middle;
+.cuatro article .cuadradosDeInfo li p{
+  /*Dimensions*/
   width: 100%;
   height: 100%;
+
+  /*Text*/
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgb(142, 146, 151);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 18px;
+
+  /*Animations*/
+  transition:all 0.3s ease-in-out;
 }
 
-.cinco article div{
-  display: table-cell;
+/*main sprites figure dimensions*/
+.cuatro article .cuadradosDeInfo li figure{
+  height: 64px;
+  display: inline-block;
+  overflow: hidden;
+}
+.cuatro article .cuadradosDeInfo li #sprite1{
+  width: 54px;
+}
+.cuatro article .cuadradosDeInfo li #sprite2{
+  width: 64px;
+  height: 52px;
+}
+.cuatro article .cuadradosDeInfo li #sprite3{
+  width: 36px;
+}
+
+/*main sprites img positions*/
+.cuatro article .cuadradosDeInfo li figure img{
+  height: 152%;
+  width: auto;
+  position: relative;
+  bottom: 25px;
+}
+.cuatro article .cuadradosDeInfo li #sprite1 img{}
+.cuatro article .cuadradosDeInfo li #sprite2 img{
+  height: 186%;
+  left: -105px;
+}
+.cuatro article .cuadradosDeInfo li #sprite3 img{
+  left: -236px;
+}
+
+/*Hover on li*/
+.cuatro article .cuadradosDeInfo li:hover{
+  transform: scale(1.2);
+  border-color: rgb(197, 154, 109);
+  font-weight: bold;
+}
+.cuatro article .cuadradosDeInfo li:hover h1{
+  color: rgb(197, 154, 109);
+}
+.cuatro article .cuadradosDeInfo li:hover p{
+  font-weight: bold;
+}
+.cuatro article .cuadradosDeInfo li:hover #sprite1 img{
+  left: -54px;
+}
+.cuatro article .cuadradosDeInfo li:hover #sprite2 img{
+  left: -169px;
+}
+.cuatro article .cuadradosDeInfo li:hover #sprite3 img{
+  left: -275px;
+}
+
+
+/*Seccion: cinco*/
+.cinco{
+  /*Dimensions*/
+  width: 100%;
+  height: 200px;
+
+  /*Text*/
+  font-family: 'Open Sans', sans-serif;
+
+  /*Misc.*/
+  background-color: rgb(40, 47, 53);
+}
+.cinco article{
+  /*Dimensions*/
+  width: 100%;
+  height: 100%;
+
+  /*Alignment*/
+  display: table;
   vertical-align: middle;
+}
+.cinco article div{
+  /*Dimensions*/
   width: auto;
   height: auto;
+
+  /*Alignment*/
+  display: table-cell;
+  vertical-align: middle;
+
+  /*Text*/
   text-align: center;
 }
-
 .cinco article div a{
+  /*Alignment*/
+  display: inline-block;
+
+  /*Text*/
   color: #b3b3b3;
   letter-spacing: 4px;
-  display: inline-block;
+
+  /*Paddgin*/
   padding: 15px 15px 15px 15px;
 }
+
+
+/*Seccion: seis*/
+.seis{
+  /*Dimensions*/
+  height: auto;
+  width: 100%;
+}
+.seis article{
+  /*Dimensions*/
+  width: 100%;
+  height: auto;
+
+  /*Padding*/
+  padding-top:140px;
+
+  /*Text*/
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.seis article h1{
+  /*Alignment*/
+  display: inline-block;
+
+  /*Text*/
+  font-size: 20px;
+  color: rgb(66, 74, 81);
+  text-align: center;
+
+  /*Margins*/
+  margin-bottom: 53px;
+}
+.seis article p{
+  /*Dimensions*/
+  width: 720px;
+
+  /*Alignment*/
+  display: inline-block;
+
+  /*Text*/
+  font-size: 1.75em;
+  color: rgb(66, 74, 81);
+  line-height: 1.75em;
+  letter-spacing: 1px;
+
+  /*Margins*/
+  margin-bottom: 120px;
+}
+
+
+
+
+
 
 
     section,
