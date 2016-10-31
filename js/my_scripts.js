@@ -1,7 +1,5 @@
-
-
 $(document).on('ready',function() {
-
+	/*Elementos a interactuar*/
 	pull = $('a.pull');
 	links = $('header nav ul li a');
 	menu = $('header nav ul');
@@ -10,7 +8,13 @@ $(document).on('ready',function() {
 	botonMenu = $('header .center .open_menu');
 	abrirMenu = $('header .center .open_menu .fa-bars');
 	cerrarMenu = $('header .center .open_menu .fa-times');
-
+	buttonSeccUno = $('.uno article #flecha_uno');
+	buttonSeccDos = $('.dos article #flecha_dos');
+	buttonSeccCuatro = $('.cuatro article #flecha_cuatro');
+	buttonSeccSeis = $('.seis article #flecha_seis');
+	videoControls = $('.seis article #controlButtons');
+	botonPlay = $('#boton_play');
+	botonPausa = $('#boton_pause');
 
 	$(pull).on('click', function(e) {
 		e.preventDefault();
@@ -21,7 +25,6 @@ $(document).on('ready',function() {
 		e.preventDefault();
 		abrirCerrarMenu();
 	});
-	abrirCerrarMenu();
 	ancho();
 	function ancho(){
 		var anchoPantalla1 = $(window).width();
@@ -54,13 +57,53 @@ $(document).on('ready',function() {
 		});
 	};
 
-
+	/*BX - Slider*/
 	$('.tweets-slider').bxSlider({
     infiniteLoop:true,
     auto:true,
     controls:false,
 		slideWidth:719
   });
+
+  /*Click en los botones / a */
+	buttonSeccUno.on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({
+        scrollTop: $("#dos").offset().top
+    }, 1000);
+	});
+	buttonSeccDos.on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({
+        scrollTop: $("#tres").offset().top
+    }, 1000);
+	});
+	buttonSeccCuatro.on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({
+        scrollTop: $("#cinco").offset().top
+    }, 1000);
+	});
+	buttonSeccSeis.on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({
+        scrollTop: $("#siete").offset().top
+    }, 1000);
+	});
+	botonPlay.on('click', function(e){
+		e.preventDefault();
+		/*@Fixme: have to add video controls so that when i hit play, the play
+		          button hides, and the pause button appears*/
+		botonPlay.toggleClass('displayNone');
+		botonPausa.toggleClass('displayNone');
+	});
+	botonPausa.on('click', function(e){
+		e.preventDefault();
+		/*@Fixme: have to add video controls so that when i hit play, the play
+		          button hides, and the pause button appears*/
+		botonPlay.toggleClass('displayNone');
+		botonPausa.toggleClass('displayNone');
+	});
 
 });
 
@@ -79,31 +122,9 @@ function centrarOurShop(){
 }
 
 function abrirCerrarMenu(){
-	console.log('entro');
-	if(menu.hasClass('displayNone')){
-		if(abrirMenu.hasClass('displayNone'))
-			abrirMenu.removeClass('displayNone');
-
-		if(cerrarMenu.hasClass('displayBlock'))
-			cerrarMenu.removeClass('displayBlock');
-
-		abrirMenu.addClass('displayBlock');
-		cerrarMenu.addClass('displayNone');
-		menu.removeClass('displayNone');
-		menu.addClass('displayBlock');
-
-	}
-	else{
-		if(abrirMenu.hasClass('displayBlock'))
-			abrirMenu.removeClass('displayBlock');
-		if(cerrarMenu.hasClass('displayNone'));
-			cerrarMenu.removeClass('displayNone');
-
-		abrirMenu.addClass('displayNone');
-		cerrarMenu.addClass('displayBlock');
-		menu.removeClass('displayBlock');
-		menu.addClass('displayNone');
-	}
+	abrirMenu.toggleClass('displayNone');
+	cerrarMenu.toggleClass('displayNone');
+	menu.toggleClass('displayNone');
 }
 
 function altoPantalla(){
