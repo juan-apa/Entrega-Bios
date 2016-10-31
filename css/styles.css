@@ -555,6 +555,20 @@ article{
   /*Alignment*/
   display: inline-block;
 }
+.boton{
+  /*Padding*/
+  padding: 20px 30px 20px 30px;
+
+  /*Background*/
+  background-color: rgb(197, 154, 109);
+
+  /*Borders*/
+  border-radius: 1px;
+
+  /*Text*/
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
 
 
 /*Seccion: dos*/
@@ -912,7 +926,18 @@ article{
   /*Margins*/
   margin-bottom: 120px;
 }
+.seis article figure{
+  margin-bottom: 90px;
+}
+.seis article .boton{
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
 
+  /*@Fixme: no me reconoce el margen este de mierda para mover el boton que
+            esta abajo mas hacia abajo.*/
+  margin-bottom: 90px!important;
+}
 
 
 
