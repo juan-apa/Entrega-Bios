@@ -124,7 +124,7 @@ function centrarOurShop(){
 function abrirCerrarMenu(){
 	abrirMenu.toggleClass('displayNone');
 	cerrarMenu.toggleClass('displayNone');
-	menu.toggleClass('displayNone');
+	menu.toggleClass('desplegar');
 }
 
 function altoPantalla(){

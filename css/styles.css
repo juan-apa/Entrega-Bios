@@ -397,44 +397,8 @@ h1.logo a span {
 h1.logo a span {
         text-indent:-99999em;
 }
-header a{
-  float: left;
-}
-header nav {
-	position: fixed;
-  left: 0;
-  top: 50px;
-  /*Poner que el alto sea el alto de la pagina*/
-	margin:5em 0 0 0;
-}
-header nav{
-  width: 40em;
-}
-header nav ul{
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-header nav ul li{
-  width: 100%;
-  height: 10.5%;
-  font-size: 150%;
-}
-header nav ul li a {
-  width: 100%;
-  height: 100%;
-	color:#fff;
-	padding:10% 2em 10% 2em;
-	display:block;
-  text-align: center;
-}
-header nav ul li a:hover,
-header nav ul li a.current-item{
-  color:#fff;
-  background:#E66665;
-}
-a.pull {
-	display: none;
-}
+
+/*Menu*/
 .open_menu{
   float: left;
   margin-top: 5em;
@@ -447,6 +411,24 @@ a.pull {
   height: auto;
   width: auto;
 }
+header .center{
+  position: fixed;
+}
+header .center nav,
+header .center a{
+  float: left;
+}
+header .center nav{
+  width: 0;
+  max-width: 200px;
+  margin-top: 5em;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+header .center nav ul{
+}
+
 
 /* main */
 /*Clases auxiliares*/
@@ -512,6 +494,10 @@ a.pull {
   /*Text*/
   color: rgb(255, 255, 255);
   text-align: center;
+}
+.desplegar{
+  width: 100px;
+  display: block;
 }
 
 main {
@@ -1038,6 +1024,8 @@ article{
 
   /*Paddings*/
   padding-top: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   /*Text*/
   text-align: center;
@@ -1056,8 +1044,10 @@ article{
 }
 .ocho article ul{
   /*Dimensions*/
-  height: 490px;
-  width: 1170px;
+  height: auto;
+  min-height: 490px;
+  width: 100%;
+  max-width: 1170px;
 
   /*Alignment*/
   display: inline-block;
@@ -1068,6 +1058,7 @@ article{
 .ocho article ul li{
   /*Alignment*/
   float: left;
+  width: 66%;
 }
 .ocho article ul .direccion{
   text-align: left;
@@ -1136,14 +1127,13 @@ article{
   /*Dimensions*/
   width: 66%;
 
-  /*Padding*/
-  /*
-  padding-left: 3%;
-  padding-right: 3%;
-  */
-
   /*Position*/
-  float: left;
+  float: right;
+}
+.ocho article ul .form-wrap fieldset{
+  /*Dimensions*/
+  width: 100%;
+  height: 100%;
 }
 .ocho article ul .form-wrap input{
   /*Dimensions*/
@@ -1169,7 +1159,7 @@ article{
 .form-wrap form {
   width:100%;
 }
-.form-wrap .col input,
+.form-wrap input,
 textarea {
   background:rgb(30, 36, 41);
   border:none;
@@ -1177,14 +1167,11 @@ textarea {
   color:#fff;
   padding:0 1% 0 1%;
 }
-.form-wrap .col input {
-  height:3em;
-}
-.form-wrap .col input:focus,
+.form-wrap input:focus,
 textarea:focus {
   border-top-color: #c59a6d;
 }
-.form-wrap .col input:hover,
+.form-wrap input:hover,
 textarea:hover {
   background:#333;
 }
@@ -1195,7 +1182,7 @@ textarea:hover {
   color:rgb(0, 0, 0);;
   background: #c59a6d;
   border:none;
-  height:3em;
+  height:30px;
   float:right;
   padding:0 3em 0 3em;
 }
@@ -1230,19 +1217,40 @@ footer {
     transform: scale(1.1);
   }
 }
-
 @media only screen and (max-width: 1024px) {
 	.center {
 		width:90%;
 	}
+  .ocho article .form-wrap form fieldset div input{
+    float: none;
+  }
+  .ocho article ul li{
+    float: none;
+  }
 }
-
+@media only screen and (max-width: 770px){
+  .ocho article{
+    padding-top: 12%;
+  }
+  .ocho article ul li form fieldset input{
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+  .ocho article ul li form fieldset input,
+  .ocho article ul li form fieldset textarea{
+    display: block;
+    width: 100%!important;
+  }
+  .ocho article ul li form fieldset input:after{
+    content: "\a";
+    break-after: always;
+  }
+}
 @media only screen and (max-width: 680px) {
 	.center {
 		width:95%;
 	}
 }
-
 @media only screen and (max-width: 640px){
   .cuatro{
     height: auto;
@@ -1273,21 +1281,24 @@ footer {
     max-width: 90%;
   }
 }
-
+@media only screen and (max-width: 565px){
+  .ocho article ul li{
+    float: none;
+    display: block;
+    width: 100%!important;
+  }
+}
 @media only screen and (max-width:480px) {
   header .center {
       width:100%;
-  }
-  h1.logo {
-    margin:0 0 0 2.5%;
+      position: fixed;
   }
   header nav {
-    position:relative;
+    position:fixed;
     float:left;
     margin:1em 0 0 0;
   }
   header nav ul {
-    display:none;
     border-top:1px solid #ccc;
     background:#f0f0f0;
   }
@@ -1318,6 +1329,8 @@ footer {
   header a.pull:hover {
       color:#000;
   }
+
+
   .uno article .uno_titulo{
     font-size: 27px;
   }
