@@ -3,6 +3,8 @@ $(document).on('ready',function() {
 	pull = $('a.pull');
 	links = $('header nav ul li a');
 	menu = $('header nav ul');
+	navBar = $('header nav');
+	menuItems = $('header nav ul li');
 	padreOurShop = $('.cinco article');
 	divOurShop = $('.cinco article div');
 	botonMenu = $('header .center .open_menu');
@@ -125,6 +127,21 @@ function abrirCerrarMenu(){
 	abrirMenu.toggleClass('displayNone');
 	cerrarMenu.toggleClass('displayNone');
 	menu.toggleClass('desplegar');
+	navBar.toggleClass('desplegar');
+	/*links.toggleClass('displayNone');*/
+}
+
+function centrarItemsMenu(){
+	/*Los li son menuItems*/
+	/*Los a dentro de los li son links*/
+	var altoLi = parseFloat(menuItems.css('height'))
+	links.css('height',  altoLi);
+	var altoTextoA = parseFloat(links.css('font-size'));
+	var altoA = parseFloat(links.css('height'));
+	var paddingsASetear = ((altoA-altoTextoA)/2);
+	links.css('padding-top', paddingsASetear);
+	links.css('padding-bottom', paddingsASetear);
+	console.log('Alto texto: ', altoTextoA, '; Alto a: ', altoA, '; Paddings: ', paddingsASetear);
 }
 
 function altoPantalla(){
@@ -133,7 +150,11 @@ function altoPantalla(){
 }
 
 function setearTamanioMenu(){
-	$('nav ul').css('height', altoPantalla()+'px');
+	//$('nav ul').css('height', altoPantalla()+'px');
+	if($('nav ul').hasClass('desplegar')){
+		$('nav').css('width', (85 + '%'));
+	}
+	centrarItemsMenu();
 }
 
 $(window).resize(function(){

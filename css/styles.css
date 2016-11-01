@@ -341,7 +341,6 @@ footer {
 
 .center {
     float:none;
-    width:85%;
 }
 
 .displayNone{
@@ -413,11 +412,16 @@ h1.logo a span {
 }
 header .center{
   position: fixed;
+  transition: 0.3s ease-in-out;
 }
 header .center nav,
 header .center a{
   float: left;
 }
+header .center nav ul li a{
+  transition: 0.3s ease-in-out;
+}
+/*
 header .center nav{
   width: 0;
   max-width: 200px;
@@ -425,8 +429,24 @@ header .center nav{
   transition: 0.3s ease-in-out;
   position: relative;
   display: inline-block;
-}
+}*/
 header .center nav ul{
+  width: 0px;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+header nav ul li{
+  text-align: center;
+  width: 100%;
+  height: 12.5vh;
+  border-bottom: 2px solid rgb(142, 146, 151);
+}
+header nav ul li a{
+  width: 100%;
+  display: block;
+  height: 100%!important;
+  font-size: 20px;
+  color: rgb(142, 146, 151);
 }
 
 
@@ -496,8 +516,8 @@ header .center nav ul{
   text-align: center;
 }
 .desplegar{
-  width: 100px;
-  display: block;
+  width: 300px!important;
+  display: block!important;
 }
 
 main {
@@ -1292,21 +1312,23 @@ footer {
   header .center {
       width:100%;
       position: fixed;
+      height: 100%;
   }
   header nav {
     position:fixed;
     float:left;
     margin:1em 0 0 0;
+    height: 100%;
   }
   header nav ul {
     border-top:1px solid #ccc;
     background:#f0f0f0;
+    height: 100%;
   }
   header nav,
   header nav ul {
       height:auto;
   }
-  header nav,
   header nav ul,
   header nav ul li{
       width: 100%;
