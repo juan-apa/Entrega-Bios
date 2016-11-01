@@ -9,57 +9,71 @@
          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
          <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic,400italic|Lily+Script+One|Montserrat:400,700' rel='stylesheet' type='text/css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/my_scripts.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>Industrial Box</title>
 </head>
 <body>
     <div id="main-wrapper">
-          <header>
+        <header>
             <div class="center">
-              <a class="open_menu" href="#">
-                <span class="fa fa-bars">
-
-                </span>
-                <span class="fa fa-times">
-
-                </span>
-              </a>
-              <br>
               <nav>
-                <ul class="displayNone">
+                <ul class="">
                   <li>
-                    <a class="current-item" href="#s_inicio" title="">
+                    <a class="current-item" href="#uno" title="">
                         Inicio
                     </a>
                   </li>
                   <li>
-                    <a href="#s_meet_us" title="">
+                    <a href="#dos"  title="">
                         Meet us
                     </a>
                   </li>
                   <li>
-                    <a href="#s_service" title="">
+                    <a href="#tres"  title="">
+                        Video
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#cuatro"  title="">
                         Service
                     </a>
                   </li>
-                <li>
-                  <a href="#s_proyects" title="">
+                  <li>
+                    <a href="#cinco"  title="">
+                      Shop
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#seis"  title="">
                       Projects
-                  </a>
-                </li>
-                <li>
-                  <a href="#s_proyects" title="">
-                    Projects
-                  </a>
-                </li>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#siete"  title="">
+                      Tweets
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#ocho"  title="">
+                      Contact Us
+                    </a>
+                  </li>
               </ul>
-            </nav>
+              </nav>
+              <a class="open_menu" href="#">
+                <span class="fa fa-bars"></span>
+                <span class="fa fa-times displayNone"></span>
+              </a>
+              <br>
           </div>
         </header>
         <main>
@@ -77,10 +91,10 @@
                  We make websites
                </div>
                <br>
-               <a href="#" class="flecha_w recuadro_o"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+               <a href="#" class="flecha_w recuadro_o" id="flecha_uno"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
              </article>
            </section>
-           <section class="dos">
+           <section class="dos" id="dos">
              <article>
                <div class="dos_titulo">
                 MEET US
@@ -94,20 +108,18 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                </div>
                <br>
-               <a href="#" class="flecha_o recuadro_o"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+               <a href="#" class="flecha_o recuadro_o" id="flecha_dos"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
              </article>
            </section>
-           <section class="tres">
+           <section class="tres" id="tres">
              <article>
-               <div class="boton_play">
-                 <i class="fa fa-play" aria-hidden="true"></i>
-               </div>
-               <figure>
-                 <img src="images/bg2.jpg" alt="" />
-               </figure>
+               <a href="#" class="boton_play" id="controlButtons">
+                 <i class="fa fa-play" id="boton_play" aria-hidden="true"></i>
+                 <i class="fa fa-pause displayNone" id="boton_pause" aria-hidden="true"></i>
+               </a>
              </article>
            </section>
-           <section class="cuatro">
+           <section class="cuatro" id="cuatro">
              <article>
                <div class="cuatro_titulo">
                 Service
@@ -118,46 +130,190 @@
                </div>
                <br>
                <div class="cuatro_text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
                </div>
                <br>
-               <div class="cuadrados">
-                 <div class="recuadro_g cuad sec img_uno">
-                   <figure><img src="images/main_sprite.png" alt="" /></figure>
-                   <h1 class="cuad_h_sec">BRANDING</h1>
-                   <br>
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-                 </div>
-                 <div class="recuadro_o cuad prim img_dos">
-                   <figure><img src="images/main_sprite.png" alt="" /></figure>
-                   <h1 class="cuad_h_prim">WEB DEVELOPMENT</h1>
-                   <br>
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               <ul class="cuadradosDeInfo">
+                <li>
+                  <figure class="sprite" id="sprite1">
+                    <img src="images/main_sprite.png" alt="" />
+                  </figure>
+                  <h1>BRANDING</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation.
+                  </p>
+                </li>
+                <li>
+                  <figure class="sprite" id="sprite2">
+                    <img src="images/main_sprite.png" alt="" />
+                  </figure>
+                  <h1>WEB DEVELOPMENT</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation.
+                  </p>
+                </li>
+                <li>
+                  <figure class="sprite" id="sprite3">
+                    <img src="images/main_sprite.png" alt="" />
+                  </figure>
+                  <h1>APP DESIGN</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation.
+                  </p>
+                </li>
+               </ul>
 
-                 </div>
-                 <div class="recuadro_g cuad sec img_tres">
-                   <figure><img src="images/main_sprite.png" alt="" /></figure>
-                   <h1 class="cuad_h_sec">APP DESIGN</h1>
-                   <br>
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                 </div>
-               </div>
                <br>
-               <a href="#" class="flecha_o recuadro_o"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+               <a href="#" class="flecha_o recuadro_o" id="flecha_cuatro"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
              </article>
            </section>
-           <section class="cinco">
+           <section class="cinco" id="cinco">
              <article>
                <div >
                  <a class="recuadro_o" href="#">CHECK OUR SHOP</a>
                </div>
              </article>
            </section>
-           <section class="">
+           <section class="seis" id="seis">
              <article>
+               <h1>OUR LATEST PROJECTS</h1>
+               <br>
+               <div class="linea"></div>
+               <br>
+               <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                 laboris nisi ut aliquip ex ea commodo consequat.
+               </p>
+               <figure>
+                 <img src="images/bg3.jpg" alt="" />
+               </figure>
+               <br>
+               <a href="#" class="boton"> MORE ON BEHANCE</a>
+               <br>
+               <br>
+               <br>
+               <a href="#" class="flecha_o recuadro_o" id="flecha_seis"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+             </article>
+           </section>
+           <section class="siete" id="siete">
+             <article>
+               <h1>LATEST TWEETS</h1>
+               <br>
+               <div class="linea">
+               </div>
+               <ul class="bxslider tweets-slider">
+                  <li>
+                    <p>
+                      <em>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </em>
+                    </p>
+                    <p class="autor">
+                      CRAIG
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <em>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </em>
+                    </p>
+                    <p class="autor">
+                      CRAIG
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <em>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                       sed do eiusmod tempor incididunt ut labore et dolore magna
+                       aliqua. Ut enim ad minim veniam.
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </em>
+                    </p>
+                    <p class="autor">
+                      CRAIG
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <em>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </em>
+                    </p>
+                    <p class="autor">
+                      CRAIG
+                    </p>
+                  </li>
 
+              </ul>
+             </article>
+           </section>
+           <section class="ocho" id="ocho">
+             <article>
+               <h1>CONTACT US</h1>
+               <br>
+               <div class="linea"></div>
+               <br>
+               <ul>
+                 <li class="direccion">
+                   <figure class="icono_ubicacion"><img src="images/main_sprite.png" alt="" /></figure>
+                   <div class="direccion_info">
+                     <h2>ADRESS</h2>
+                     <p>
+                       908 New Hampshire Ave NW
+                       <br>
+                       Washington, DC 20037
+                       <br>
+                       (202) 463-5141
+                       <br>
+                       Doris Cannon
+                       <br>
+                       <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                       <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                       <a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                     </p>
+                   </div>
+                 </li>
+                 <li class="form-wrap">
+                   <form>
+                     <fieldset>
+                         <input type="text" placeholder="Nombre" id="name" name="name" />
+                         <input type="tel" placeholder="Teléfono" id="phono" name="phono" />
+
+                         <input type="email" placeholder="Email" id="email" name="email" />
+                         <input type="text" placeholder="Asunto" id="asunto" name="asunto" />
+
+                       <textarea placeholder="Mensaje"  id="mensaje" name="mensaje">
+
+                       </textarea>
+                       <br>
+                       <input type="submit" value="Send" />
+                     </fieldset>
+                  </form>
+                 </li>
+               </ul>
              </article>
            </section>
         </main>
