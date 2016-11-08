@@ -19,7 +19,7 @@
     <script src="js/jquery.bxslider.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Industrial Box</title>
+    <title>Entrega - Juan Aparicio 4.820.381-8</title>
 </head>
 <body>
     <div id="main-wrapper">
@@ -28,42 +28,42 @@
               <nav>
                 <ul class="">
                   <li>
-                    <a class="current-item" href="#uno" title="">
+                    <a class="current-item" href="#uno" id="UNO_Link" title="">
                         Inicio
                     </a>
                   </li>
                   <li>
-                    <a href="#dos"  title="">
+                    <a href="#dos" id="DOS_Link"  title="">
                         Meet us
                     </a>
                   </li>
                   <li>
-                    <a href="#tres"  title="">
+                    <a href="#tres" id="TRES_Link"  title="">
                         Video
                     </a>
                   </li>
                   <li>
-                    <a href="#cuatro"  title="">
+                    <a href="#cuatro" id="CUATRO_Link"  title="">
                         Service
                     </a>
                   </li>
                   <li>
-                    <a href="#cinco"  title="">
+                    <a href="#cinco" id="CINCO_Link"  title="">
                       Shop
                     </a>
                   </li>
                   <li>
-                    <a href="#seis"  title="">
+                    <a href="#seis" id="SEIS_Link"  title="">
                       Projects
                     </a>
                   </li>
                   <li>
-                    <a href="#siete"  title="">
+                    <a href="#siete" id="SIETE_Link"  title="">
                       Tweets
                     </a>
                   </li>
                   <li>
-                    <a href="#ocho"  title="">
+                    <a href="#ocho" id="OCHO_Link"  title="">
                       Contact Us
                     </a>
                   </li>
@@ -113,10 +113,15 @@
            </section>
            <section class="tres" id="tres">
              <article>
+               <video class="video1" controls="false" preload loop>
+                   <source src="videos/a.mp4" type="video/mp4">
+                   <source src="videos/b.ogv" type="video/ogv">
+               </video>
                <a href="#" class="boton_play" id="controlButtons">
                  <i class="fa fa-play" id="boton_play" aria-hidden="true"></i>
                  <i class="fa fa-pause displayNone" id="boton_pause" aria-hidden="true"></i>
                </a>
+
              </article>
            </section>
            <section class="cuatro" id="cuatro">
@@ -197,7 +202,13 @@
                  laboris nisi ut aliquip ex ea commodo consequat.
                </p>
                <figure>
-                 <img src="images/bg3.jpg" alt="" />
+                 <ul id="slider3">
+                  <li><img src="images/slider1.jpg" /></li>
+                  <li><img src="images/slider2.jpg" /></li>
+                  <li><img src="images/slider3.jpg" /></li>
+                  <li><img src="images/slider4.jpg" /></li>
+                  <li><img src="images/slider5.jpg" /></li>
+                </ul>
                </figure>
                <br>
                <a href="#" class="boton"> MORE ON BEHANCE</a>
@@ -316,10 +327,11 @@
                </ul>
              </article>
            </section>
-        </main>
-        <footer>
+           <div class="flecha_comienzo">
+             <a href="#" class="fa fa-arrow-up"></a>
 
-        </footer>
+           </div>
+        </main>
     </div>
 </body>
 </html>
